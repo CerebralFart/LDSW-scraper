@@ -1,7 +1,14 @@
 {
-	"type": "module",
 	"dependencies": {
 		"n3": "^1.16.3",
 		"rdf": "^4.1.1"
+	},
+	"devDependencies": {
+		"@types/node": "^18.15.10",
+		"typescript": "^5.0.2"
+	},
+	"scripts": {
+		"watch": "tsc --watch",
+		"compile": "tsc"
 	}
 }
