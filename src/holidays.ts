@@ -20,7 +20,7 @@ const CLOSE = '</rdf:RDF>';
     const data = JSON.parse(readFileSync(INPUT).toString());
 
     const regionMap: { [key: string]: string[] } = {
-        'country-wide': ['North', 'Center', 'South'],
+        'heel Nederland': ['North', 'Center', 'South'],
         'noord': ['North'],
         'midden': ['Center'],
         'zuid': ['South']
@@ -41,14 +41,13 @@ const CLOSE = '</rdf:RDF>';
 
             for (const data of holiday.regions) {
                 let {region, startdate, enddate} = data;
-                if (region === 'heel Nederland') region = 'country-wide';
-                const regions = regionMap[region];
+                const suffix = region === 'heel Nederland' ? '' : `-${region}`
 
                 await new Promise(res => output.write(
-                    `<owl:NamedIndividual rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#${type}-${schoolyear}-${region}">\n` +
+                    `<owl:NamedIndividual rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#${type}-${schoolyear}${suffix}">\n` +
                     `<rdf:type rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Holiday"/>\n` +
                     `<fallsInAcademicYear rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#${schoolyear}"/>\n` +
-                    regions.map(region => `<forRegion rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#${region}"/>\n`).join('') +
+                    regionMap[region].map(region => `<forRegion rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#${region}"/>\n`).join('') +
                     `<startDate ${rdf.dateTime}>${(new Date(startdate)).toISOString()}</startDate>\n` +
                     `<endDate ${rdf.dateTime}>${(new Date(enddate)).toISOString()}</endDate>\n` +
                     `<isCompulsory ${rdf.boolean}>${compulsorydates}</isCompulsory>\n` +
