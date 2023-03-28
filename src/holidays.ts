@@ -1,46 +1,63 @@
-import {createWriteStream, existsSync, readFileSync, unlink, writeFileSync} from 'fs'
-import {xsdBoolean, xsdDateTime} from "./util/xsd";
+import {createWriteStream, existsSync, readFileSync, unlink} from 'fs'
+import {lineByLine} from "./util/fs";
+import {rdf} from "./util/datatypes";
 
-const OUTPUT = './ontologies/holidays.owl'
+const SCHEMA = './schemas/holidays.xml';
+const INPUT = './data/holidays.json';
+const OUTPUT = './ontologies/holidays.xml';
+const CLOSE = '</rdf:RDF>';
 
-// Remove file if exists
-if (existsSync(OUTPUT)) unlink(OUTPUT, console.warn);
+(async () => {
+    // Remove file if exists
+    if (existsSync(OUTPUT)) unlink(OUTPUT, console.warn);
 
-// Copy initial data
-const schema = readFileSync('./schemas/holidays.owl', {});
-writeFileSync(OUTPUT, schema, {})
+    // Copy initial data
+    const output = createWriteStream(OUTPUT, {flags: 'a'})
+    await lineByLine(SCHEMA, line => {
+        if (line !== CLOSE) output.write(line + '\n')
+    })
 
-const output = createWriteStream(OUTPUT, {flags: 'a'})
-const data = JSON.parse(readFileSync('./data/holidays.json').toString());
+    const data = JSON.parse(readFileSync(INPUT).toString());
 
-const regionMap: { [key: string]: string } = {
-    'country-wide': ':North, :Center, :South',
-    'noord': ':North',
-    'midden': ':Center',
-    'zuid': ':South'
-}
+    const regionMap: { [key: string]: string[] } = {
+        'country-wide': ['North', 'Center', 'South'],
+        'noord': ['North'],
+        'midden': ['Center'],
+        'zuid': ['South']
+    }
 
-for (const year of data) {
-    let {schoolyear, vacations} = year.content[0];
-    schoolyear = schoolyear.replace(/ /g, '');
+    for (const year of data) {
+        let {schoolyear, vacations} = year.content[0];
+        schoolyear = schoolyear.replace(/ /g, '');
 
-    output.write(`:${schoolyear} rdf:type owl:NamedIndividual, :AcademicYear.\n`);
+        await new Promise(res => output.write(
+            `<owl:NamedIndividual rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#${schoolyear}">\n` +
+            `<rdf:type rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#AcademicYear"/>\n` +
+            `</owl:NamedIndividual>`,
+            res));
 
-    for (const holiday of vacations) {
-        let {compulsorydates, type} = holiday;
+        for (const holiday of vacations) {
+            let {compulsorydates, type} = holiday;
 
-        for (const data of holiday.regions) {
-            let {region, startdate, enddate} = data;
-            if (region === 'heel Nederland') region = 'country-wide';
+            for (const data of holiday.regions) {
+                let {region, startdate, enddate} = data;
+                if (region === 'heel Nederland') region = 'country-wide';
+                const regions = regionMap[region];
 
-            output.write(
-                `:${type}-${schoolyear}-${region} rdf:type owl:NamedIndividual, :Holiday;\n` +
-                `  :fallsInAcademicYear :${schoolyear};\n` +
-                `  :forRegion ${regionMap[region]};\n` +
-                `  :isCompulsory ${xsdBoolean(compulsorydates === 'true')};\n` +
-                `  :startDate ${xsdDateTime(new Date(startdate))};\n` +
-                `  :endDate ${xsdDateTime(new Date(enddate))}.\n`
-            );
+                await new Promise(res => output.write(
+                    `<owl:NamedIndividual rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#${type}-${schoolyear}-${region}">\n` +
+                    `<rdf:type rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Holiday"/>\n` +
+                    `<fallsInAcademicYear rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#${schoolyear}"/>\n` +
+                    regions.map(region => `<forRegion rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#${region}"/>\n`).join('') +
+                    `<startDate ${rdf.dateTime}>${(new Date(startdate)).toISOString()}</startDate>\n` +
+                    `<endDate ${rdf.dateTime}>${(new Date(enddate)).toISOString()}</endDate>\n` +
+                    `<isCompulsory ${rdf.boolean}>${compulsorydates}</isCompulsory>\n` +
+                    `</owl:NamedIndividual>\n`,
+                    res));
+            }
         }
     }
-}
+
+    await new Promise(res => output.write(CLOSE, res));
+    output.close();
+})();
