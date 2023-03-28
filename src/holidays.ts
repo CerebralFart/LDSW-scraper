@@ -48,8 +48,8 @@ const CLOSE = '</rdf:RDF>';
                     `<rdf:type rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Holiday"/>\n` +
                     `<fallsInAcademicYear rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#${schoolyear}"/>\n` +
                     regionMap[region].map(region => `<forRegion rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#${region}"/>\n`).join('') +
-                    `<startDate ${rdf.dateTime}>${(new Date(startdate)).toISOString()}</startDate>\n` +
-                    `<endDate ${rdf.dateTime}>${(new Date(enddate)).toISOString()}</endDate>\n` +
+                    `<time:hasBeginning><time:Instant time:inXSDDateTimeStamp="${new Date(startdate).toISOString()}"/></time:hasBeginning>\n` +
+                    `<time:hasEnd><time:Instant time:inXSDDateTimeStamp="${new Date(enddate).toISOString()}"/></time:hasEnd>\n` +
                     `<isCompulsory ${rdf.boolean}>${compulsorydates}</isCompulsory>\n` +
                     `</owl:NamedIndividual>\n`,
                     res));
