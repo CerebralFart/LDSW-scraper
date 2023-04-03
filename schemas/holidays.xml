@@ -1,45 +1,45 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://ld.sven.mol.it/ut-ldsw/holidays#"
-         xml:base="http://ld.sven.mol.it/ut-ldsw/holidays"
+<rdf:RDF xmlns="http://ld.sven.mol.it/holidays#"
+         xml:base="http://ld.sven.mol.it/holidays"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:xml="http://www.w3.org/XML/1998/namespace"
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:time="http://www.w3.org/2006/time#">
-    <owl:Ontology rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays"/>
+    <owl:Ontology rdf:about="http://ld.sven.mol.it/holidays"/>
 
     <!-- Object Properties -->
-    <owl:ObjectProperty rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#fallsInAcademicYear">
-        <rdfs:domain rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Holiday"/>
-        <rdfs:range rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#AcademicYear"/>
+    <owl:ObjectProperty rdf:about="http://ld.sven.mol.it/holidays#fallsInAcademicYear">
+        <rdfs:domain rdf:resource="http://ld.sven.mol.it/holidays#Holiday"/>
+        <rdfs:range rdf:resource="http://ld.sven.mol.it/holidays#AcademicYear"/>
     </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#forRegion">
-        <rdfs:domain rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Holiday"/>
-        <rdfs:range rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Region"/>
+    <owl:ObjectProperty rdf:about="http://ld.sven.mol.it/holidays#forRegion">
+        <rdfs:domain rdf:resource="http://ld.sven.mol.it/holidays#Holiday"/>
+        <rdfs:range rdf:resource="http://ld.sven.mol.it/holidays#Region"/>
     </owl:ObjectProperty>
 
     <!-- Data properties -->
-    <owl:DatatypeProperty rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#isCompulsory">
+    <owl:DatatypeProperty rdf:about="http://ld.sven.mol.it/holidays#isCompulsory">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
 
     <!-- Classes -->
-    <owl:Class rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#AcademicYear"/>
-    <owl:Class rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#Holiday">
+    <owl:Class rdf:about="http://ld.sven.mol.it/holidays#AcademicYear"/>
+    <owl:Class rdf:about="http://ld.sven.mol.it/holidays#Holiday">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
     </owl:Class>
-    <owl:Class rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#Region"/>
+    <owl:Class rdf:about="http://ld.sven.mol.it/holidays#Region"/>
 
     <!-- Static Individuals -->
-    <owl:NamedIndividual rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#North">
-        <rdf:type rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Region"/>
+    <owl:NamedIndividual rdf:about="http://ld.sven.mol.it/holidays#North">
+        <rdf:type rdf:resource="http://ld.sven.mol.it/holidays#Region"/>
     </owl:NamedIndividual>
-    <owl:NamedIndividual rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#Center">
-        <rdf:type rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Region"/>
+    <owl:NamedIndividual rdf:about="http://ld.sven.mol.it/holidays#Center">
+        <rdf:type rdf:resource="http://ld.sven.mol.it/holidays#Region"/>
     </owl:NamedIndividual>
-    <owl:NamedIndividual rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#South">
-        <rdf:type rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Region"/>
+    <owl:NamedIndividual rdf:about="http://ld.sven.mol.it/holidays#South">
+        <rdf:type rdf:resource="http://ld.sven.mol.it/holidays#Region"/>
     </owl:NamedIndividual>
 
 </rdf:RDF>

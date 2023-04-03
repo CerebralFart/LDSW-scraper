@@ -31,8 +31,8 @@ const CLOSE = '</rdf:RDF>';
         schoolyear = schoolyear.replace(/ /g, '');
 
         await new Promise(res => output.write(
-            `<owl:NamedIndividual rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#${schoolyear}">\n` +
-            `<rdf:type rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#AcademicYear"/>\n` +
+            `<owl:NamedIndividual rdf:about="http://ld.sven.mol.it/holidays#${schoolyear}">\n` +
+            `<rdf:type rdf:resource="http://ld.sven.mol.it/holidays#AcademicYear"/>\n` +
             `</owl:NamedIndividual>`,
             res));
 
@@ -44,10 +44,10 @@ const CLOSE = '</rdf:RDF>';
                 const suffix = region === 'heel Nederland' ? '' : `-${region}`
 
                 await new Promise(res => output.write(
-                    `<owl:NamedIndividual rdf:about="http://ld.sven.mol.it/ut-ldsw/holidays#${type}-${schoolyear}${suffix}">\n` +
-                    `<rdf:type rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#Holiday"/>\n` +
-                    `<fallsInAcademicYear rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#${schoolyear}"/>\n` +
-                    regionMap[region].map(region => `<forRegion rdf:resource="http://ld.sven.mol.it/ut-ldsw/holidays#${region}"/>\n`).join('') +
+                    `<owl:NamedIndividual rdf:about="http://ld.sven.mol.it/holidays#${type}-${schoolyear}${suffix}">\n` +
+                    `<rdf:type rdf:resource="http://ld.sven.mol.it/holidays#Holiday"/>\n` +
+                    `<fallsInAcademicYear rdf:resource="http://ld.sven.mol.it/holidays#${schoolyear}"/>\n` +
+                    regionMap[region].map(region => `<forRegion rdf:resource="http://ld.sven.mol.it/holidays#${region}"/>\n`).join('') +
                     `<time:hasBeginning><time:Instant time:inXSDDateTimeStamp="${new Date(startdate).toISOString()}"/></time:hasBeginning>\n` +
                     `<time:hasEnd><time:Instant time:inXSDDateTimeStamp="${new Date(enddate).toISOString()}"/></time:hasEnd>\n` +
                     `<isCompulsory ${rdf.boolean}>${compulsorydates}</isCompulsory>\n` +
