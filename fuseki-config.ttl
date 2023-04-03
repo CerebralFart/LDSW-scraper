@@ -29,3 +29,27 @@
             jena:content [jena:externalContent <file:/ontologies/holidays.xml>];
         ]
     ].
+
+<#om2> rdf:type fuseki:Service;
+    fuseki:name      "/om2";
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "sparql"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "query"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:gsp_r;
+        fuseki:name "data"
+    ];
+    fuseki:dataset   [
+        rdf:type jena:RDFDataset;
+        rdfs:label "Ontology of Units of Measure";
+        jena:defaultGraph [
+            rdfs:label "om2.xml";
+            rdf:type jena:MemoryModel;
+            jena:content [jena:externalContent <file:/ontologies/om2.xml>];
+        ]
+    ].
