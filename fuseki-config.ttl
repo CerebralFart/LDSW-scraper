@@ -1,0 +1,31 @@
+@prefix :       <#>.
+@prefix fuseki: <http://jena.apache.org/fuseki#>.
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix jena:   <http://jena.hpl.hp.com/2005/11/Assembler#>.
+
+[] rdf:type fuseki:Server.
+
+<#holidays> rdf:type fuseki:Service;
+    fuseki:name      "/holidays";
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "sparql"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "query"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:gsp_r;
+        fuseki:name "data"
+    ];
+    fuseki:dataset   [
+        rdf:type jena:RDFDataset;
+        rdfs:label "Holidays";
+        jena:defaultGraph [
+            rdfs:label "holidays.xml";
+            rdf:type jena:MemoryModel;
+            jena:content [jena:externalContent <file:/ontologies/holidays.xml>];
+        ]
+    ].
