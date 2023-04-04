@@ -2,7 +2,8 @@ FROM node:19-alpine AS node
 COPY ./ /app/
 WORKDIR /app/
 RUN npm run compile && \
-    node src/holidays.js
+    node src/holidays.js && \
+    node src/knmi.js
 
 FROM alpine:3.17 AS unzip
 WORKDIR /fuseki/

@@ -30,6 +30,30 @@
         ]
     ].
 
+<#knmi> rdf:type fuseki:Service;
+    fuseki:name      "/knmi";
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "sparql"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "query"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:gsp_r;
+        fuseki:name "data"
+    ];
+    fuseki:dataset   [
+        rdf:type jena:RDFDataset;
+        rdfs:label "KNMI";
+        jena:defaultGraph [
+            rdfs:label "knmi.xml";
+            rdf:type jena:MemoryModel;
+            jena:content [jena:externalContent <file:/ontologies/knmi.xml>];
+        ]
+    ].
+
 <#om2> rdf:type fuseki:Service;
     fuseki:name      "/om2";
     fuseki:endpoint  [
