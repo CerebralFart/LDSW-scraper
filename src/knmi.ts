@@ -105,7 +105,7 @@ const LAYOUT = [
             valueNode('windSpeed', parseInt(data.wind_speed) / 10, om2.meterPerSecond) +
             valueNode('windGusts', parseInt(data.wind_gusts) / 10, om2.meterPerSecond) +
             valueNode('sunTime', parseInt(data.sun_time) * 6, om2.minute) +
-            valueNode('sunTotal', parseInt(data.sun_total) * 10000, om2.joulePerSquareMeter) +
+            valueNode('sunTotal', parseInt(data.sun_total) / 100, om2.megaJoulePerSquareMeter) +
             valueNode('rainTime', parseInt(data.rain_time) * 6, om2.minute) +
             valueNode(
                 'rainTotal',
