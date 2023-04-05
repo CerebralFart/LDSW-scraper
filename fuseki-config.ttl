@@ -54,6 +54,30 @@
         ]
     ].
 
+<#mazemap> rdf:type fuseki:Service;
+    fuseki:name      "/mazemap";
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "sparql"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "query"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:gsp_r;
+        fuseki:name "data"
+    ];
+    fuseki:dataset   [
+        rdf:type jena:RDFDataset;
+        rdfs:label "Mazemap";
+        jena:defaultGraph [
+            rdfs:label "mazemap.xml";
+            rdf:type jena:MemoryModel;
+            jena:content [jena:externalContent <file:/ontologies/mazemap.xml>];
+        ]
+    ].
+
 <#om2> rdf:type fuseki:Service;
     fuseki:name      "/om2";
     fuseki:endpoint  [

@@ -3,7 +3,8 @@ COPY ./ /app/
 WORKDIR /app/
 RUN npm run compile && \
     node src/holidays.js && \
-    node src/knmi.js
+    node src/knmi.js && \
+    node src/mazemap.js
 
 FROM alpine:3.17 AS unzip
 WORKDIR /fuseki/

@@ -1,4 +1,5 @@
 /node_modules/
 /ontologies/holidays.xml
 /ontologies/knmi.xml
+/ontologies/mazemap.xml
 /src/**/*.js

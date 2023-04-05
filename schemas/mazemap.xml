@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ld.sven.mol.it/mazemap#"
+     xml:base="http://ld.sven.mol.it/mazemap"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://ld.sven.mol.it/mazemap"/>
+
+    <!-- Object Properties --> 
+    <owl:ObjectProperty rdf:about="http://ld.sven.mol.it/mazemap#locatedAt">
+        <rdfs:domain rdf:resource="http://ld.sven.mol.it/mazemap#Building"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ld.sven.mol.it/mazemap#locatedAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ld.sven.mol.it/mazemap#Campus"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+    <!-- Data properties -->
+    <owl:DatatypeProperty rdf:about="http://ld.sven.mol.it/mazemap#center"/>
+    <owl:DatatypeProperty rdf:about="http://ld.sven.mol.it/mazemap#floors">
+        <rdfs:domain rdf:resource="http://ld.sven.mol.it/mazemap#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://ld.sven.mol.it/mazemap#geometry">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://ld.sven.mol.it/mazemap#id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://ld.sven.mol.it/mazemap#name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="http://ld.sven.mol.it/mazemap#Building"/>
+    <owl:Class rdf:about="http://ld.sven.mol.it/mazemap#Campus"/>
+
+    <!-- Static Individuals -->
+    <owl:NamedIndividual rdf:about="http://ld.sven.mol.it/mazemap#University_of_Twente">
+        <rdf:type rdf:resource="http://ld.sven.mol.it/mazemap#Campus"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">171</id>
+    </owl:NamedIndividual>
+</rdf:RDF>
