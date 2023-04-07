@@ -1,0 +1,478 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.w3.org/2002/07/owl"
+         xmlns:dco="https://w3id.org/dco#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xml="http://www.w3.org/XML/1998/namespace"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dbpedia-owl="http://dbpedia.org/ontology/">
+    <Ontology/>
+    <AnnotationProperty rdf:about="http://dbpedia.org/ontology/abbreviation"/>
+    <AnnotationProperty rdf:about="https://w3id.org/dco#Building"/>
+    <AnnotationProperty rdf:about="https://w3id.org/dco#hasAddress"/>
+    <AnnotationProperty rdf:about="https://w3id.org/dco#hasZipCode"/>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Afvalstoffendepot">
+        <dco:Building>Afvalstoffendepot</dco:Building>
+        <dbpedia-owl:abbreviation>AF</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 EA</dco:hasZipCode>
+        <dco:hasAddress>Achterhorst 40</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Atletiekberging">
+        <dco:Building>Atletiekberging</dco:Building>
+        <dco:hasAddress>Campuslaan</dco:hasAddress>
+        <dbpedia-owl:abbreviation>AB</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#BMC">
+        <dco:hasAddress>Achterhorst 70</dco:hasAddress>
+        <dco:Building>BMC</dco:Building>
+        <dbpedia-owl:abbreviation>BI</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 EA</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Bastille">
+        <dco:hasAddress>De Hems 10</dco:hasAddress>
+        <dco:Building>Bastille</dco:Building>
+        <dco:hasZipCode>7522 NL</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>BA</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Boortoren">
+        <dco:hasAddress>Calslaan 19</dco:hasAddress>
+        <dco:hasZipCode>7522 MJ</dco:hasZipCode>
+        <dco:Building>Boortoren</dco:Building>
+        <dbpedia-owl:abbreviation>BT</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Box">
+        <dco:hasAddress>Calslaan 60</dco:hasAddress>
+        <dco:Building>Box</dco:Building>
+        <dco:hasZipCode>7522 MG</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>BX</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Buitenhorst">
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>BH</dbpedia-owl:abbreviation>
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+        <dco:Building>Buitenhorst</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Campusterrein">
+        <dco:Building>Campusterrein</dco:Building>
+        <dco:hasAddress>Drienerlolaan</dco:hasAddress>
+        <dbpedia-owl:abbreviation>CA</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Carillon">
+        <dco:hasAddress>Drienerlolaan</dco:hasAddress>
+        <dbpedia-owl:abbreviation>CN</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NB</dco:hasZipCode>
+        <dco:Building>Carillon</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Carré">
+        <dbpedia-owl:abbreviation>CR</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NH</dco:hasZipCode>
+        <dco:Building>Carré</dco:Building>
+        <dco:hasAddress>Hallenweg 23</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Citadel">
+        <dco:Building>Citadel</dco:Building>
+        <dco:hasZipCode>7522 NH</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>CI</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Hallenweg 15</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Cubicus">
+        <dco:Building>Cubicus</dco:Building>
+        <dco:hasZipCode>7522 NJ</dco:hasZipCode>
+        <dco:hasAddress>De Zul 10</dco:hasAddress>
+        <dbpedia-owl:abbreviation>CU</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Drienerburght">
+        <dco:Building>Drienerburght</dco:Building>
+        <dbpedia-owl:abbreviation>DR</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 LV</dco:hasZipCode>
+        <dco:hasAddress>Boerderijweg 1</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Gallery">
+        <dco:hasAddress>Hengelosestraat 500</dco:hasAddress>
+        <dco:Building>Gallery</dco:Building>
+        <dbpedia-owl:abbreviation>GY</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7521 AN</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Garage">
+        <dbpedia-owl:abbreviation>GA</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Dienstweg 10</dco:hasAddress>
+        <dco:Building>Garage</dco:Building>
+        <dco:hasZipCode>7522 ND</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Hangar">
+        <dco:hasZipCode>7522 EA</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>HA</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Achterhorst 40</dco:hasAddress>
+        <dco:Building>Hangar</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Hogedruklab">
+        <dbpedia-owl:abbreviation>HD</dbpedia-owl:abbreviation>
+        <dco:Building>Hogedruklab</dco:Building>
+        <dco:hasZipCode>7522 ND</dco:hasZipCode>
+        <dco:hasAddress>Dienstweg 3</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Hogekamp">
+        <dco:hasAddress>De Veltmaat 10</dco:hasAddress>
+        <dbpedia-owl:abbreviation>HO</dbpedia-owl:abbreviation>
+        <dco:Building>Hogekamp</dco:Building>
+        <dco:hasZipCode>7522 NM</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Hoogsp.verdeelstation">
+        <dco:hasZipCode>7522 ND</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>HV</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Dienstweg 4</dco:hasAddress>
+        <dco:Building>Hoogsp.verdeelstation</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Horstring">
+        <dbpedia-owl:abbreviation>HR</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+        <dco:Building>Horstring</dco:Building>
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Horsttoren">
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+        <dbpedia-owl:abbreviation>HT</dbpedia-owl:abbreviation>
+        <dco:Building>Horsttoren</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Kleinhorst">
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+        <dco:Building>Kleinhorst</dco:Building>
+        <dbpedia-owl:abbreviation>KH</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Koelgebouw">
+        <dco:Building>Koelgebouw</dco:Building>
+        <dco:hasAddress>De Horst</dco:hasAddress>
+        <dbpedia-owl:abbreviation>KG</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Koudecirkel">
+        <dco:hasAddress>de Horst</dco:hasAddress>
+        <dbpedia-owl:abbreviation>KC</dbpedia-owl:abbreviation>
+        <dco:Building>Koudecirkel</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Linde">
+        <dbpedia-owl:abbreviation>LI</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 MJ</dco:hasZipCode>
+        <dco:Building>Linde</dco:Building>
+        <dco:hasAddress>Calslaan 17</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Logica">
+        <dbpedia-owl:abbreviation>LO</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Campuslaan 60</dco:hasAddress>
+        <dco:hasZipCode>7522 NR</dco:hasZipCode>
+        <dco:Building>Logica</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Meander">
+        <dbpedia-owl:abbreviation>ME</dbpedia-owl:abbreviation>
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+        <dco:Building>Meander</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Mondriaan">
+        <dco:Building>Mondriaan</dco:Building>
+        <dco:hasAddress>Calslaan 45..55</dco:hasAddress>
+        <dco:hasZipCode>7522 MJ</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>MO</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Nanolab">
+        <dco:Building>Nanolab</dco:Building>
+        <dco:hasZipCode>7522 NH</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>NL</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Hallenweg 23</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Noordhorst">
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+        <dbpedia-owl:abbreviation>NH</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+        <dco:Building>Noordhorst</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Oosthorst">
+        <dbpedia-owl:abbreviation>OH</dbpedia-owl:abbreviation>
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+        <dco:Building>Oosthorst</dco:Building>
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Pakkerij">
+        <dco:Building>Pakkerij</dco:Building>
+        <dco:hasAddress>Oude Markt 24</dco:hasAddress>
+        <dco:hasZipCode>7511 GB</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>PK</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Paviljoen">
+        <dco:hasZipCode>7522 ND</dco:hasZipCode>
+        <dco:Building>Paviljoen</dco:Building>
+        <dco:hasAddress>Dienstweg 5</dco:hasAddress>
+        <dbpedia-owl:abbreviation>PA</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Pompstation">
+        <dbpedia-owl:abbreviation>PS</dbpedia-owl:abbreviation>
+        <dco:Building>Pompstation</dco:Building>
+        <dco:hasZipCode>7522 NR</dco:hasZipCode>
+        <dco:hasAddress>Campuslaan 98</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Ravelijn">
+        <dco:Building>Ravelijn</dco:Building>
+        <dbpedia-owl:abbreviation>RA</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NH</dco:hasZipCode>
+        <dco:hasAddress>Hallenweg 17</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Reinwaterkelder">
+        <dco:hasZipCode>7522 NR</dco:hasZipCode>
+        <dco:hasAddress>Campuslaan 98</dco:hasAddress>
+        <dco:Building>Reinwaterkelder</dco:Building>
+        <dbpedia-owl:abbreviation>RW</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Rioolgemaal">
+        <dco:hasAddress>Het Ritke</dco:hasAddress>
+        <dbpedia-owl:abbreviation>RG</dbpedia-owl:abbreviation>
+        <dco:Building>Rioolgemaal</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Schuur">
+        <dco:hasZipCode>7522 LP</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>SR</dbpedia-owl:abbreviation>
+        <dco:Building>Schuur</dco:Building>
+        <dco:hasAddress>Boerderijweg 10</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Seinhuis">
+        <dco:hasZipCode>7522 ND</dco:hasZipCode>
+        <dco:hasAddress>Dienstweg 12</dco:hasAddress>
+        <dco:Building>Seinhuis</dco:Building>
+        <dbpedia-owl:abbreviation>SH</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Sleutel">
+        <dco:Building>Sleutel</dco:Building>
+        <dbpedia-owl:abbreviation>SL</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NE</dco:hasZipCode>
+        <dco:hasAddress>Campuslaan 99</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Spiegel">
+        <dco:hasZipCode>7522 NB</dco:hasZipCode>
+        <dco:Building>Spiegel</dco:Building>
+        <dbpedia-owl:abbreviation>SP</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Drienerlolaan 5</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Sportcentrum">
+        <dco:Building>Sportcentrum</dco:Building>
+        <dco:hasAddress>De Hems 20</dco:hasAddress>
+        <dco:hasZipCode>7522 NL</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>SC</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Stadsweide">
+        <dco:Building>Stadsweide</dco:Building>
+        <dco:hasZipCode>7513 EA</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>SW</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Haaksbergerstraat 82</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Stall">
+        <dco:hasAddress>Campuslaan 15</dco:hasAddress>
+        <dco:Building>Stall</dco:Building>
+        <dbpedia-owl:abbreviation>ST</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NC</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Technohal">
+        <dbpedia-owl:abbreviation>TL</dbpedia-owl:abbreviation>
+        <dco:Building>Technohal</dco:Building>
+        <dco:hasAddress>Hallenweg 10</dco:hasAddress>
+        <dco:hasZipCode>7522 NH</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Teehuis">
+        <dbpedia-owl:abbreviation>TH</dbpedia-owl:abbreviation>
+        <dco:Building>Teehuis</dco:Building>
+        <dco:hasZipCode>7522 NH</dco:hasZipCode>
+        <dco:hasAddress>Hallenweg 19</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Tekeningenarchief">
+        <dbpedia-owl:abbreviation>TA</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Dienstweg 6</dco:hasAddress>
+        <dco:hasZipCode>7522 ND</dco:hasZipCode>
+        <dco:Building>Tekeningenarchief</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Tennispaviljoen">
+        <dco:hasAddress>Campuslaan 19</dco:hasAddress>
+        <dco:Building>Tennispaviljoen</dco:Building>
+        <dbpedia-owl:abbreviation>TP</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NC</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Therm">
+        <dbpedia-owl:abbreviation>TM</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7521 PL</dco:hasZipCode>
+        <dco:Building>Therm</dco:Building>
+        <dco:hasAddress>Capitool 40a</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Trafostation">
+        <dbpedia-owl:abbreviation>TF</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 PB</dco:hasZipCode>
+        <dco:hasAddress>Bosweg 170</dco:hasAddress>
+        <dco:Building>Trafostation</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Vleugel">
+        <dbpedia-owl:abbreviation>VL</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NB</dco:hasZipCode>
+        <dco:hasAddress>Drienerlolaan 5</dco:hasAddress>
+        <dco:Building>Vleugel</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Vlinder">
+        <dco:hasZipCode>7522 MJ</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>VI</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Calslaan 35</dco:hasAddress>
+        <dco:Building>Vlinder</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Vrijhof">
+        <dco:hasAddress>De Veltmaat 5</dco:hasAddress>
+        <dbpedia-owl:abbreviation>VR</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NM</dco:hasZipCode>
+        <dco:Building>Vrijhof</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Waaier">
+        <dco:hasZipCode>7522 NH</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>WA</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Hallenweg 25</dco:hasAddress>
+        <dco:Building>Waaier</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Wallstreet">
+        <dco:hasZipCode>7511 GG</dco:hasZipCode>
+        <dco:Building>Wallstreet</dco:Building>
+        <dbpedia-owl:abbreviation>WS</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Walstraat 47</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Watersportcomplex">
+        <dco:Building>Watersportcomplex</dco:Building>
+        <dbpedia-owl:abbreviation>WX</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7547 AN</dco:hasZipCode>
+        <dco:hasAddress>Auke Vleerstraat 99</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Westhorst">
+        <dco:Building>Westhorst</dco:Building>
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>WH</dbpedia-owl:abbreviation>
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Windpark">
+        <dco:hasZipCode>7522 EA</dco:hasZipCode>
+        <dco:Building>Windpark</dco:Building>
+        <dbpedia-owl:abbreviation>WP</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Achterhorst 50</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Zilverling">
+        <dbpedia-owl:abbreviation>ZI</dbpedia-owl:abbreviation>
+        <dco:Building>Zilverling</dco:Building>
+        <dco:hasAddress>Hallenweg 19</dco:hasAddress>
+        <dco:hasZipCode>7522 NH</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Zuidhorst">
+        <dco:Building>Zuidhorst</dco:Building>
+        <dbpedia-owl:abbreviation>ZH</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Zwembad">
+        <dbpedia-owl:abbreviation>ZW</dbpedia-owl:abbreviation>
+        <dco:Building>Zwembad</dco:Building>
+        <dco:hasZipCode>7522 NR</dco:hasZipCode>
+        <dco:hasAddress>Campuslaan 100</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#BTC">
+        <dbpedia-owl:abbreviation>BTC</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Hengelosestraat 705</dco:hasAddress>
+        <dco:hasZipCode>7521 PA</dco:hasZipCode>
+        <dco:Building>BTC</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Blokhutten">
+        <dbpedia-owl:abbreviation>BL</dbpedia-owl:abbreviation>
+        <dco:Building>Blokhutten</dco:Building>
+        <dco:hasZipCode>7522 NC</dco:hasZipCode>
+        <dco:hasAddress>Campuslaan 17</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Boerderij_Bosch">
+        <dbpedia-owl:abbreviation>BB</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NC</dco:hasZipCode>
+        <dco:Building>Boerderij Bosch</dco:Building>
+        <dco:hasAddress>Campuslaan 15</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Boerderij">
+        <dco:hasAddress>Boerderijweg 10</dco:hasAddress>
+        <dbpedia-owl:abbreviation>BOE</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 LP</dco:hasZipCode>
+        <dco:Building>Boerderij</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Erve_Holzik">
+        <dco:Building>Erve Holzik</dco:Building>
+        <dbpedia-owl:abbreviation>ER</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 LV</dco:hasZipCode>
+        <dco:hasAddress>Boerderijweg 75</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Erve_Holzik-schuur">
+        <dco:hasZipCode>7522 LV</dco:hasZipCode>
+        <dco:hasAddress>Boerderijweg 77</dco:hasAddress>
+        <dbpedia-owl:abbreviation>ES</dbpedia-owl:abbreviation>
+        <dco:Building>Erve Holzik - schuur</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Gasdruk_Regelstation">
+        <dco:hasZipCode>7522 ND</dco:hasZipCode>
+        <dbpedia-owl:abbreviation>GR</dbpedia-owl:abbreviation>
+        <dco:hasAddress>Dienstweg 3a</dco:hasAddress>
+        <dco:Building>Gasdruk Regelstation</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Hal_B">
+        <dbpedia-owl:abbreviation>HB</dbpedia-owl:abbreviation>
+        <dco:Building>Hal B</dco:Building>
+        <dco:hasAddress>Hallenweg 21</dco:hasAddress>
+        <dco:hasZipCode>7522 NH</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#High_Tech_Factory">
+        <dbpedia-owl:abbreviation>HTF</dbpedia-owl:abbreviation>
+        <dco:Building>High Tech Factory</dco:Building>
+        <dco:hasAddress>De Veltmaat 17</dco:hasAddress>
+        <dco:hasZipCode>7522 NM</dco:hasZipCode>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Horst_Complex">
+        <dco:Building>Horst Complex</dco:Building>
+        <dco:hasZipCode>7522 LW</dco:hasZipCode>
+        <dco:hasAddress>De Horst 2</dco:hasAddress>
+        <dbpedia-owl:abbreviation>HC</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#ITC_Hotel">
+        <dbpedia-owl:abbreviation>IIH</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7511 AE</dco:hasZipCode>
+        <dco:hasAddress>Boulevard 1945 4</dco:hasAddress>
+        <dco:Building>ITC Hotel</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#ITC_gebouw">
+        <dco:Building>ITC gebouw</dco:Building>
+        <dbpedia-owl:abbreviation>ITC</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7514 AE</dco:hasZipCode>
+        <dco:hasAddress>Hengelosestraat 99</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#KPMG_gebouw">
+        <dco:hasZipCode>7521 AG</dco:hasZipCode>
+        <dco:hasAddress>Hengelosestraat 581</dco:hasAddress>
+        <dbpedia-owl:abbreviation>KP</dbpedia-owl:abbreviation>
+        <dco:Building>KPMG gebouw</dco:Building>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#O_O_Plein">
+        <dco:Building>O&amp;O Plein</dco:Building>
+        <dco:hasAddress>Hallenweg</dco:hasAddress>
+        <dbpedia-owl:abbreviation>OO</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Openluchttheater">
+        <dco:hasAddress>Campuslaan</dco:hasAddress>
+        <dco:Building>Openluchttheater</dco:Building>
+        <dbpedia-owl:abbreviation>OUT</dbpedia-owl:abbreviation>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Sky">
+        <dco:Building>Sky (W.C. Campus)</dco:Building>
+        <dbpedia-owl:abbreviation>SK</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NL</dco:hasZipCode>
+        <dco:hasAddress>De Hems 16</dco:hasAddress>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ld.sven.mol.it/buildings#Stafflat">
+        <dco:Building>Stafflat / Torenflat</dco:Building>
+        <dco:hasAddress>Campuslaan 50</dco:hasAddress>
+        <dbpedia-owl:abbreviation>SF</dbpedia-owl:abbreviation>
+        <dco:hasZipCode>7522 NR</dco:hasZipCode>
+    </rdf:Description>
+</rdf:RDF>

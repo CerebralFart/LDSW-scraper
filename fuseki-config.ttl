@@ -6,6 +6,30 @@
 
 [] rdf:type fuseki:Server.
 
+<#buildings> rdf:type fuseki:Service;
+    fuseki:name      "/buildings";
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "sparql"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "query"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:gsp_r;
+        fuseki:name "data"
+    ];
+    fuseki:dataset   [
+        rdf:type jena:RDFDataset;
+        rdfs:label "Buildings";
+        jena:defaultGraph [
+            rdfs:label "buildings.xml";
+            rdf:type jena:MemoryModel;
+            jena:content [jena:externalContent <file:/ontologies/buildings.xml>];
+        ]
+    ].
+
 <#holidays> rdf:type fuseki:Service;
     fuseki:name      "/holidays";
     fuseki:endpoint  [
