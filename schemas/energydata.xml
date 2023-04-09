@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ld.sven.mol.it/energydata#"
+         xml:base="http://ld.sven.mol.it/energydata"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xml="http://www.w3.org/XML/1998/namespace"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:time="http://www.w3.org/2006/time#">
+    <owl:Ontology rdf:about="http://ld.sven.mol.it/energydata"/>
+    <owl:Class rdf:about="http://ld.sven.mol.it/energydata#Measurement"/>
+</rdf:RDF>

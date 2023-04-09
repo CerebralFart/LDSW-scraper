@@ -2,6 +2,7 @@ FROM node:19-alpine AS node
 COPY ./ /app/
 WORKDIR /app/
 RUN npm run compile && \
+    node src/energydata.js && \
     node src/holidays.js && \
     node src/knmi.js && \
     node src/mazemap.js
@@ -18,4 +19,4 @@ COPY --from=unzip /fuseki /fuseki
 COPY --from=node /app/ontologies /ontologies/
 COPY fuseki-config.ttl /config.ttl
 EXPOSE 3030
-CMD /fuseki/fuseki-server --config=/config.ttl
+CMD /fuseki/fuseki-server  --config=/config.ttl

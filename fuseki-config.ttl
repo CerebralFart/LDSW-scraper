@@ -30,6 +30,30 @@
         ]
     ].
 
+<#energydata> rdf:type fuseki:Service;
+    fuseki:name      "/energydata";
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "sparql"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:query;
+        fuseki:name "query"
+    ];
+    fuseki:endpoint  [
+        fuseki:operation fuseki:gsp_r;
+        fuseki:name "data"
+    ];
+    fuseki:dataset   [
+        rdf:type jena:RDFDataset;
+        rdfs:label "Energy Data";
+        jena:defaultGraph [
+            rdfs:label "energydata.xml";
+            rdf:type jena:MemoryModel;
+            jena:content [jena:externalContent <file:/ontologies/energydata.xml>];
+        ]
+    ].
+
 <#holidays> rdf:type fuseki:Service;
     fuseki:name      "/holidays";
     fuseki:endpoint  [
